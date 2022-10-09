@@ -49,6 +49,22 @@ RADAR Pipeline is an open-source python package to help researchers and users wo
 
 ## 5. Project Goals
 
+The following are the goals that were set for the project at the beginning of the program. ✅ represents that the goal has been achieved. 🚧 represents that the goal is in progress and 📝 represents that the goal is to be done in the future.
+
+-   ✅ Support a larger variety of data into the pipeline, using well-defined schemas
+-   🚧 Add reading capability from multiple data sources
+-   ✅ Enhance feature analysis of the data
+-   📝 Add visualization support to the pipeline
+-   ✅ Use software best practices and add comprehensive documentation to make the pipeline more developer-friendly
+-   ✅ Add capability to generate and save a statistical report/log of the data processes
+
+Apart from these goals that were set at the beginning of the project, we also added the following features to the project along the way:
+
+-   Support for reading data and features located locally or as a GitHub repository
+-   Add mock data and mock features for testing and demonstration purposes
+-   Add ability for reading data with or without a predefined schema
+-   Add ability to compress data while exporting
+
 ## 6. Merged Pull Requests
 
 ## 7. Achievements
