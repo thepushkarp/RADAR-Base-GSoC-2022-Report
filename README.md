@@ -6,9 +6,7 @@
 
 <h1 align="center">Google Summer of Code 2022 with RADAR-Base: RADAR-Pipeline</h1>
 
-<div align="center">
 This is a summarization of the work I did for the RADAR-Pipeline project under the RADAR-Base organization as part of Google Summer of Code 2022
-</div>
 
 ## 1. Table of Contents
 
