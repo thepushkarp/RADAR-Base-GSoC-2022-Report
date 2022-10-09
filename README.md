@@ -38,6 +38,10 @@ This is a summarization of the work I did for the RADAR-Pipeline project under t
 
 ## 3. Abstract
 
+This project enhances the RADAR-Pipeline by adding support for ingesting the data, computing features from this data and then finally exporting these computed features to a file. All of these steps can be configured by a user or a researcher through YAML syntaxes specified in a single `config` file.
+
+The ingestion of data is done by using Apache Spark through pyspark. This ingested data is internally represented as a DataFrame, which makes performing operations on the columns to extract features easier. The extracted features from this DataFrame are then exported to a file.
+
 ## 4. RADAR-Pipeline
 
 ## 5. Project Goals
