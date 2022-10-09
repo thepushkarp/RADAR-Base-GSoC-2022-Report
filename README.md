@@ -44,6 +44,11 @@ The ingestion of data is done by using Apache Spark through pyspark. This ingest
 
 ## 4. RADAR-Pipeline
 
+RADAR Pipeline is an open-source python package to help researchers and users working with RADAR data to ingest, analyze, visualize, and export their data, all from a single place. The package is designed to be flexible and extensible. The pipeline aims to:
+
+-   Allow researchers to create and publish their own custom pipelines to analyze and visualize their data in a reproducible and extensible way.
+-   Allow users to consume and run published pipelines and run their own analysis on their data.
+
 ## 5. Project Goals
 
 ## 6. Merged Pull Requests
