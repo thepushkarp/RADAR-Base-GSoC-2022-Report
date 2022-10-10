@@ -93,15 +93,42 @@ The following pull requests were made during the coding period:
 
 #### 1. [Add mock data input through pySpark](https://github.com/RADAR-base/radarpipeline/pull/17)
 
+This pull request added the ability to read mock data which could be added as a submodule to the repository. The data, which is in the form of gzipped CSV was ingested using Spark through pyspark. This pull request also added the ability to read a schema file and use it to read the data much more efficiently. Apart from this, the error handling and logging was also improved and the code was refactored to make it more readable and the instructions for running the pipeline was documented. Code formatting and linting was also done to make the codebase consistent.
+
 #### 2. [Ingestion improvements](https://github.com/RADAR-base/radarpipeline/pull/26)
+
+This pull request changed the way data was being read from reading it file by file by passing each filename to the Spark File Reader to reading it in a single pass by passing the directory name to the Spark File Reader. This improved the speed of data ingestion tremendously. Apart from this, the mock data was also checked before running the mock pipeline and if it was not available, then it was downloaded to avoid errors while reading. The codebase was also refactored to remove some datatype inconsistencies and improve the readability of the code.
 
 #### 3. [Improve features codebase](https://github.com/RADAR-base-Analytics/mockfeatures/pull/2)
 
+This pull request was made in the mock features repository. It removed the dependence of the mock features on the pipeline repository by removing it as a submodule and instead, adding it as a dependency in the `requirements.txt` file. This pull request also also fixed some previous calculations to improve the feature processing operations.
+
 #### 4. [Add Feature and Data Export Modules](https://github.com/RADAR-base/radarpipeline/pull/30)
+
+This pull request added the support for processing the features and exporting the computed features from the pipeline to a file. The codebase in this pull request went through a major refactor because of some folder and file reorganization. The codebase and the documentation was also updated to reflect the changes done in the codebase till now.
 
 ## 7. Achievements
 
+The major achievements of this project are:
+
+-   The pipeline now supports reading a larger size of data, thanks to Spark's lazy reading capabilities. This along with the ability to read the data irrespective of the data schema being available or not makes the pipeline much more flexible with the kind of data it can handle
+-   Making the feature processing work was a major achievement as it was a vital part of the pipeline. The feature processing supports using both Pandas' and Spark's DataFrames, which gives the researcher freedom and flexibility of writing the processing implementation in whichever way they are comfortable with.
+-   The pipeline now supports exporting the computed features to a file. This makes the pipeline much more useful as the computed features can be used for further analysis and visualization.
+-   Finally, documenting the codebase and the pipeline was also a major achievement as it makes the codebase much more developer-friendly and easier to understand. Also, it makes it easier for new contributors to contribute to the project.
+
 ## 8. Open Issues
+
+Through the discussions with the mentors during the course of the project, we identified many new areas of improvement for the pipeline. There are also a few bugs that need to be addressed in the pipeline.
+
+The following are the major issues that were identified an are open that need further work:
+
+-   [Error in Schema reading](https://github.com/RADAR-base/radarpipeline/issues/36)
+-   [Add Docker support to the Pipeline](https://github.com/RADAR-base/radarpipeline/issues/34)
+-   [Template for new pipeline for researcher](https://github.com/RADAR-base/radarpipeline/issues/39)
+-   [Integrate branch option with GitHub repo location](https://github.com/RADAR-base/radarpipeline/issues/31)
+-   [Writing test for radar-pipeline](https://github.com/RADAR-base/radarpipeline/issues/9)
+-   [Using multiple source data directory during data ingestion](https://github.com/RADAR-base/radarpipeline/issues/42)
+-   [Read config.yaml file from the remote repo](https://github.com/RADAR-base/radarpipeline/issues/40)
 
 ## 9. Future Work
 
