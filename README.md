@@ -132,4 +132,12 @@ The following are the major issues that were identified an are open that need fu
 
 ## 9. Future Work
 
+The project still has multiple open issues, along with enhancements / follow-ups to the work I've done. Apart from this, a couple of issues that I initially planned on working were pushed behind to accommodate other higher priority issues. Of these, fixing the bug in the schema reading module, adding docker support for the pipeline and writing tests for the pipeline are the most important ones. The other issues are also important and need to be addressed in the future. I will be working on these issues in the coming weeks and would love to see the pipeline being actually used by researchers to supplement their research work.
+
 ## 10. Acknowledgements
+
+I would like to sincerely thank my mentors, the RADAR-Base organization, and the Google Summer of Code Program for giving me a fun and enriching experience this summer. I am extremely thankful for the opportunity to participate in this program and enhance my programming skills while improving the RADAR-Base project.
+
+I am immensely grateful to Amos Folarin, Heet Sankesara and Shaoxiaong Sun for their constant guidance, support and engagement in discussion to clarify my queries.
+
+The [RADAR-Base organization](https://radar-base.org) has always been welcoming and helpful since I started interacting with them. Their efforts and dedication towards improving people’s quality of life by leveraging clinical value from wearable sensor data and smartphones provided a very conducive environment to contribute. I am grateful and elated to be a part of it.
